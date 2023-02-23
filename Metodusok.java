@@ -12,8 +12,8 @@ public class Metodusok {
        kiir("%d + %d = %d\n".formatted(szam1, szam2, osszeg1));
        osszeg2 = osszead(szam3, szam4);
        kiir("%d + %d = %d\n".formatted(szam3, szam4, osszeg2));
-       osszeg3 = osszead(osszeg1, osszeg2);
-       kiir("%d + %d = %d\n".formatted(osszeg1, osszeg2, osszeg3));
+       osszeg3 = (int) Math.sqrt(szam1 + szam2 + szam3);
+        kiir("%d + %d + %d gyöke: %d\n".formatted(szam1, szam2, szam3, osszeg3));
     }
     private static int elso10szam(){
         int osszeg = 0;
